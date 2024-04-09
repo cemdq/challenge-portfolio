@@ -1,0 +1,72 @@
+/* Buttons */
+
+.btn {
+    font-family: "Raleway", sans-serif;
+    padding: 1rem;
+    border: 1px solid;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    color: white;
+    background-color: var(--blue);
+    border-color: var(--blue);
+}
+
+.btn-secondary {
+    color: var(--blue);
+    border-color: var(--blue);
+    background-color: transparent;
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: var(--blue);
+}
+
+.btn-secondary:hover {
+    color: white;
+    background-color: var(--blue);
+}
+
+
+/* Form */
+
+.input {
+    position: relative;
+    padding: .75rem;
+    padding-top: 1.75rem;
+    background-color: white;
+    border-radius: .25rem;
+    border-bottom: 1px solid #C8C8C8;
+    margin-bottom: 1rem;
+}
+
+input, textarea {
+    all: unset;
+    width: 100%;
+}
+
+label {
+    color: #A2A2A2;
+    position: absolute;
+    top: 0;
+    left: .75rem;
+    transform: translateY(1.375rem);
+    transition: all .2s;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label,
+textarea:focus + label,
+textarea:not(:placeholder-shown) + label {
+    font-size: .75rem;
+    transform: translateY(.5rem);
+}
+
+.input:focus-within { border-bottom: 2px solid var(--blue); }
+
+.input:focus-within label { color: var(--blue); }
