@@ -37,3 +37,10 @@ main a::after {
     content: url(../images/arrow.svg);
     margin-left: .5rem;
 }
+
+main ul { gap: 2rem; }
+
+@media (max-width: 768px) {
+    .profile { width: 60%; }
+    main ul { gap: 1rem; }
+}

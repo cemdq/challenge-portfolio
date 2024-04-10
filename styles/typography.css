@@ -29,6 +29,12 @@ p {
     line-height: 1;
 }
 
+i {
+    font-size: 2rem;
+    color: var(--blue);
+    margin-top: 2rem;
+}
+
 .tx-center { text-align: center; }
 
 .bold { font-weight: 600; }
